@@ -1,0 +1,84 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "title": "Spaghetti Carbonara",
+            "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3",
+            "time": "25 minutes",
+            "description": "Classic Italian pasta with creamy egg sauce, pancetta, and parmesan cheese",
+            "vegan": false
+        },
+        {
+            "id": "2",
+            "title": "Vegan Buddha Bowl",
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+            "time": "30 minutes",
+            "description": "Nutritious bowl with quinoa, roasted vegetables, chickpeas, and tahini dressing",
+            "vegan": true
+        },
+        {
+            "id": "3",
+            "title": "Grilled Salmon",
+            "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288",
+            "time": "20 minutes",
+            "description": "Fresh salmon fillet grilled to perfection with lemon and herbs",
+            "vegan": false
+        },
+        {
+            "id": "4",
+            "title": "Mushroom Risotto",
+            "image": "https://images.unsplash.com/photo-1476124369491-f51a96e57b5a",
+            "time": "40 minutes",
+            "description": "Creamy Italian rice dish with mixed mushrooms and parmesan",
+            "vegan": false
+        },
+        {
+            "id": "5",
+            "title": "Vegan Tacos",
+            "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
+            "time": "20 minutes",
+            "description": "Flavorful tacos with seasoned black beans, avocado, and fresh salsa",
+            "vegan": true
+        },
+        {
+            "id": "6",
+            "title": "Chicken Curry",
+            "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd",
+            "time": "45 minutes",
+            "description": "Aromatic Indian curry with tender chicken in a rich spiced sauce",
+            "vegan": false
+        },
+        {
+            "id": "7",
+            "title": "Greek Salad",
+            "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+            "time": "15 minutes",
+            "description": "Fresh Mediterranean salad with tomatoes, cucumber, olives, and feta cheese",
+            "vegan": false
+        },
+        {
+            "id": "8",
+            "title": "Vegan Pad Thai",
+            "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e",
+            "time": "30 minutes",
+            "description": "Thai stir-fried noodles with tofu, vegetables, and peanut sauce",
+            "vegan": true
+        },
+        {
+            "id": "9",
+            "title": "Beef Steak",
+            "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e",
+            "time": "35 minutes",
+            "description": "Juicy grilled beef steak with garlic butter and roasted potatoes",
+            "vegan": false
+        },
+        {
+            "id": "10",
+            "title": "Vegan Smoothie Bowl",
+            "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733",
+            "time": "10 minutes",
+            "description": "Refreshing acai bowl topped with fresh fruits, granola, and coconut flakes",
+            "vegan": true
+        }
+    ]
+}

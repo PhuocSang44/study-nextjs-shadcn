@@ -20,6 +20,13 @@ interface Recipe {
 }
 
 async function getRecipes(): Promise<Recipe[]> {
+  // For build time / static generation, read directly from db.json
+  if (process.env.NODE_ENV === 'production') {
+    const recipes = require('../../_data/db.json').recipes;
+    return recipes;
+  }
+
+  // For development, use API route
   const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ''}/api/recipes`, {
     next: {
       revalidate: 60 // revalidate the data every 60 seconds

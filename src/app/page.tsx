@@ -19,11 +19,16 @@ interface Recipe {
   id: string
 }
 
+import { promises as fs } from 'fs'
+import path from 'path'
+
 async function getRecipes(): Promise<Recipe[]> {
   // For build time / static generation, read directly from db.json
   if (process.env.NODE_ENV === 'production') {
-    const recipes = require('../../_data/db.json').recipes;
-    return recipes;
+    const jsonDirectory = path.join(process.cwd(), '_data')
+    const fileContents = await fs.readFile(jsonDirectory + '/db.json', 'utf8')
+    const data = JSON.parse(fileContents)
+    return data.recipes
   }
 
   // For development, use API route

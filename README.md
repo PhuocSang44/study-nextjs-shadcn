@@ -1,4 +1,4 @@
-# Study Next.js + Shadcn
+# Study basic Next.js + Shadcn
 
 A simple learning project built with **Next.js** and **Shadcn UI** — used for exploring the basics of Next.js framework, Shadcn component system, and deployment workflow using **Vercel**.
 
@@ -42,6 +42,7 @@ A simple learning project built with **Next.js** and **Shadcn UI** — used for 
 ---
 
 ## 🌐 Live Demo
+![Website Screenshot](./public/screenshot.png)
 
 You can view the online deployment here:  
 👉 [https://study-nextjs-shadcn.vercel.app](https://study-nextjs-shadcn.vercel.app)
@@ -55,7 +56,7 @@ You can view the online deployment here:
 - Basic setup and structure of a **Next.js** project  
 - How **Shadcn/UI** components work and integrate with Tailwind  
 - Managing routes, pages, and API routes in Next.js  
-- How to deploy a Next.js app to **Vercel** easily  
+- How to deploy a Next.js app to **Vercel** by linking with Github repo and added approriate enviroment variable (to replace the use of json-server in development enviroment) 
 - Basic understanding of the **build and deployment process**
 
 ---

@@ -13,16 +13,24 @@ import { Badge } from '@/components/ui/badge'
 interface Recipe {
   title: string,
   image: string,
-  time: number,
+  time: string,
   description: string,
   vegan: boolean,
   id: string
 }
 
 async function getRecipes(): Promise<Recipe[]> {
-  const result = await fetch('http://localhost:4000/recipes')
+  const result = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ''}/api/recipes`, {
+    next: {
+      revalidate: 60 // revalidate the data every 60 seconds
+    }
+  })
 
-  await new Promise(resolve => setTimeout(resolve, 2000))
+  if (!result.ok) {
+    throw new Error('Failed to fetch recipes')
+  }
+
+  await new Promise(resolve => setTimeout(resolve, 2000)) // keeping the delay for loading state demo
 
   return result.json()
 }
